@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinning_wheel/flutter_spinning_wheel.dart';
-import 'package:spinning_flutter/rouletteScore.dart';
+import 'package:spinning_wheel_flutter/rouletteScore.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -27,6 +27,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).maybePop(),
+        ),
         title: Text('Spinning Wheel '),
         backgroundColor: Colors.red,
         centerTitle: true,

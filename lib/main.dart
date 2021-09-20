@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spinning_flutter/home_page.dart';
+import 'package:spinning_wheel_flutter/login_screen_3.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: LoginScreen3(),
     );
   }
 }
